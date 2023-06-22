@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+  <title>User Login</title>
+</head>
+
+<body class="bg-gray-200">
+  <div class="flex items-center justify-center min-h-screen">
+    <div class="max-w-md w-full p-6 bg-white rounded shadow">
+      <h1 class="text-2xl font-bold mb-6">User Login</h1>
+
+      <!-- Login Form -->
+      <form action="contact-details.html">
+        <div class="mb-4">
+          <label for="username" class="block font-medium text-gray-700">Username</label>
+          <input type="text" id="username" class="form-input mt-1 block w-full" required>
+        </div>
+
+        <div class="mb-6">
+          <label for="password" class="block font-medium text-gray-700">Password</label>
+          <input type="password" id="password" class="form-input mt-1 block w-full" required>
+        </div>
+
+        <div class="flex items-center justify-between">
+          <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+            Login
+          </button>
+          <a href="#" id="forgot-password">Forgot Password?</a>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script>
+    document.getElementById("forgot-password").addEventListener("click", function(event) {
+      event.preventDefault();
+      var username = document.getElementById("username").value;
+
+      // Send a request to the server to initiate password reset
+     
+
+      // Example code to show an alert
+      alert("A password reset link has been sent to your email address.");
+    });
+  </script>
+</body>
+
+</html>
